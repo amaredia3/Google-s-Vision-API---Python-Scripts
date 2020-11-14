@@ -9,7 +9,7 @@ This program identifies handwritten text from image files using Google's Vision 
 To successfully run this script on your device, you will need valid credentials.
 To acquire credentials go to your google cloud console.
 
-Found on: https://cloud.google.com/vision/docs/ocr#:~:text=The%20Vision%20API%20can%20detect,extracts%20text%20from%20any%20image
+Found on: https://cloud.google.com/vision
 
 
 """
