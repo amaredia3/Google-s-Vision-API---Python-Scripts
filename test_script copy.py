@@ -9,6 +9,9 @@ This program identifies handwritten text from image files using Google's Vision 
 To successfully run this script on your device, you will need valid credentials.
 To acquire credentials go to your google cloud console.
 
+Found on: https://cloud.google.com/vision/docs/ocr#:~:text=The%20Vision%20API%20can%20detect,extracts%20text%20from%20any%20image
+
+
 """
 
 
@@ -40,13 +43,6 @@ texts = response.text_annotations
 
 #print text recognized from the image provided.
 print('Detected in text: ')
-print('Labels:')
-for text in texts:
-        print('\n"{}"'.format(text.description))
-
-        vertices = (['({},{})'.format(vertex.x, vertex.y)
-                    for vertex in text.bounding_poly.vertices])
-
-        print('bounds: {}'.format(','.join(vertices)))
+print(texts[0].description)
 
     
